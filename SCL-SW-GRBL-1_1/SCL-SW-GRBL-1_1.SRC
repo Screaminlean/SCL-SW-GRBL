@@ -124,7 +124,7 @@
 :ATTREND
 *-----------------------------------
 :LIBRARY=.\SCL-SW-GRBL-1_1.LIB
-:LIBRARY=..\..\..\..\..\CAMWorksData\UPG-2\MasterLibraryFiles\MILL.LIB
+:LIBRARY=..\..\..\..\..\..\CAMWorksData\UPG-2\MasterLibraryFiles\MILL.LIB
 *-----------------------------------
 :ATTRNAME=setup
 :ATTRTYPE=LIST
@@ -302,6 +302,28 @@
 :OPERLIST=interpolation angle step
 :OPERLIST=using int distance
 :OPERLIST=interpolation distance
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
+:OPERLIST=tool retract distance
+:OPERLIST=pole angle tolerance
+:OPERLIST=auto pole angle
+:OPERLIST=pole handling
+:OPERLIST=interpolation type
+:OPERLIST=retract and rewind
+:OPERLIST=rewind angle
+:OPERLIST=multiaxis best solution
+:OPERLIST=multiaxis rotary angle
+:OPERLIST=use machine limits
+:OPERLIST=auto angle pair
+:OPERLIST=other angle pair
+:OPERLIST=angle change limit
+:OPERLIST=interpolation angle step
+:OPERLIST=using int distance
+:OPERLIST=interpolation distance
 :OPEREND
 *-----------------------------------
 :OPERID=MILL_SLICE_CUT
@@ -343,7 +365,7 @@
 :SECTION=START_OF_TAPE
 :T:(Start of Tape)<EOL>
 :T:<BLANK><EOL>
-:T:(Made in : UPG-2)<EOL>
+:T:(https://github.com/Screaminlean/SCL-SW-GRBL)<EOL>
 :T:(G Code for Generic CNC with GRBL v1.1 controller)<EOL>
 :T:<BLANK><EOL>
 :T:<S_PART_NUMBER><EOL>
@@ -353,7 +375,6 @@
 :T:<S_DATE><EOL>
 :T:<BLANK><EOL>
 :T:<G:90><G:94><G:17><G!:ENGMET><G!:80><EOL>
-
 *
 :SECTION=INIT_TOOL_CHANGE_MILL
 :T:<BLANK><EOL>
@@ -816,6 +837,10 @@
 :C: USING_5TH_AXIS_LOCK=NO
 :C: WORK_COORDINATE_SUPPORT=NO
 :C: WORK_AND_SUB_SUPPORT=NO
+:C: USING_HAAS_G10_L13=NO
+:C: USING_WORLD_COORDINATES=NO
+:C: SUPPORTING_CL_COOLANT=1
+:C: MAX_ARC_RADIUS=9999
 :C: USING_HAAS_G10_L13=NO
 :C: USING_WORLD_COORDINATES=NO
 :C: SUPPORTING_CL_COOLANT=1
